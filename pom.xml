@@ -16,7 +16,8 @@
         <struts.version>2.5.26</struts.version>
         <cxf.version>3.2.7</cxf.version>
         <sitemesh.version>2.4.2</sitemesh.version>
-        <logback.version>1.2.3</logback.version>
+        <logback.version>1.2.13</logback.version>
+        <slf4.version>1.7.36</slf4.version>
     </properties>
 
     <dependencies>
@@ -73,6 +74,11 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4.version}</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
