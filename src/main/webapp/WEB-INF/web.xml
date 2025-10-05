@@ -13,10 +13,29 @@
         <param-value>classpath:applicationContext.xml</param-value>
     </context-param>
 
-
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
+
+    <!-- LOGBACK: MDC para request info -->
+    <filter>
+        <filter-name>MDCInsertingServletFilter</filter-name>
+        <filter-class>ch.qos.logback.classic.helpers.MDCInsertingServletFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>MDCInsertingServletFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- SPRING: associa o contexto à thread/request -->
+    <filter>
+        <filter-name>spring-request</filter-name>
+        <filter-class>org.springframework.web.filter.RequestContextFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>spring-request</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 
     <!-- Filtro do Struts 2 -->
     <filter>
@@ -28,6 +47,17 @@
         <filter-name>struts2</filter-name>
         <url-pattern>*.action</url-pattern>
     </filter-mapping>
+
+    <!-- APACHE CXF: serviços em /service/* -->
+    <servlet>
+        <servlet-name>CXFServlet</servlet-name>
+        <servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CXFServlet</servlet-name>
+        <url-pattern>/service/*</url-pattern>
+    </servlet-mapping>
 
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
