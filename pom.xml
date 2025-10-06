@@ -56,6 +56,11 @@
             <artifactId>spring-beans</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-spring-plugin</artifactId>
+            <version>${struts.version}</version>
+        </dependency>
 
         <!-- ===== Apache CXF (Web Services SOAP/REST) ===== -->
         <dependency>
