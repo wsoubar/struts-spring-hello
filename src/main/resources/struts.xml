@@ -10,5 +10,8 @@
         <action name="hello" class="helloAction" method="sayHello" >
             <result name="success">/WEB-INF/pages/index.jsp</result>
         </action>
+        <action name="testadb" class="helloAction" method="testaDB" >
+            <result name="success">/WEB-INF/pages/index.jsp</result>
+        </action>
     </package>
 </struts>
