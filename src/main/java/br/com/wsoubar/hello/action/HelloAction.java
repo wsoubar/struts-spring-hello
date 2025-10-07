@@ -1,10 +1,5 @@
 package br.com.wsoubar.hello.action;
 
-import com.opensymphony.xwork2.ActionSupport;
-
-import br.com.wsoubar.hello.service.HelloService;
-import br.com.wsoubar.hello.service.HelloWorldService;
-
 import java.sql.Connection;
 
 import javax.naming.InitialContext;
@@ -13,6 +8,10 @@ import javax.sql.DataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import com.opensymphony.xwork2.ActionSupport;
+
+import br.com.wsoubar.hello.service.HelloWorldService;
 
 public class HelloAction extends ActionSupport {
 
