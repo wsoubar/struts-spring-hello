@@ -27,7 +27,7 @@
     <logger name="org.springframework" level="INFO"/>
     <logger name="org.apache.struts2" level="DEBUG"/>
     <logger name="org.apache.cxf" level="INFO"/>
-    <logger name="br.com.wsoubar" level="DEBUG"/>
+    <logger name="br.com.wsoubar.hello" level="DEBUG"/>
 
     <!-- Log raiz -->
     <root level="INFO">
