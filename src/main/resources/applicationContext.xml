@@ -22,7 +22,7 @@
 
     <bean id="cxf" class="org.apache.cxf.bus.spring.SpringBus"/>
 
-    <!-- Exemplo de endpoint (opcional) -->
+    <!-- Exemplo de endpoint (opcional)   -->
     <jaxws:endpoint id="helloService"
                     implementor="br.com.wsoubar.hello.service.HelloServiceImpl"
                     address="/hello"/>
