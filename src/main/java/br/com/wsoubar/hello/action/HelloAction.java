@@ -55,6 +55,11 @@ public class HelloAction extends ActionSupport {
         return "sayBye...";
     }
 
+    public String sayMorning() {
+        logger.info("sayMorning()");
+        return "sayMorning...";
+    }
+
     // Getter e Setter para que o JSP possa acessar
     public String getMessage() {
         return message;
