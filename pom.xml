@@ -18,6 +18,7 @@
         <sitemesh.version>2.4.2</sitemesh.version>
         <logback.version>1.2.13</logback.version>
         <slf4.version>1.7.36</slf4.version>
+        <jasperreports.version>6.20.6</jasperreports.version>
     </properties>
 
     <dependencies>
@@ -140,6 +141,42 @@
             <version>2.2</version>
             <scope>provided</scope>
         </dependency>
+
+        <!-- JasperReports -->
+        <dependency>
+            <groupId>net.sf.jasperreports</groupId>
+            <artifactId>jasperreports</artifactId>
+            <version>${jasperreports.version}</version>
+        </dependency>
+
+        <!-- Biblioteca de gráficos usada por JasperReports -->
+        <dependency>
+            <groupId>org.jfree</groupId>
+            <artifactId>jfreechart</artifactId>
+            <version>1.5.4</version>
+        </dependency>
+
+        <!-- Exportação para PDF (Jasper usa o iText 2.x, versão livre) -->
+        <dependency>
+            <groupId>com.lowagie</groupId>
+            <artifactId>itext</artifactId>
+            <version>2.1.7</version>
+        </dependency>
+
+        <!-- (Opcional) Exportação XLS/XLSX -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.5</version>
+        </dependency>
+
+        <!-- (Opcional) Para preencher relatórios com datas e formatos locais -->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.4</version>
+        </dependency>
+
 
         <dependency>
             <groupId>com.mysql</groupId>
