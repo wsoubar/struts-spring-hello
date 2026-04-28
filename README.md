@@ -41,7 +41,9 @@ mvn tomcat7:undeploy
 
 ## 🔌 Configuração do Plugin
 
+```xml
 <url>http://localhost:8080/manager/text</url>
 <server>TomcatServer</server>
 <username>admin</username>
 <password>admin</password>
+```
