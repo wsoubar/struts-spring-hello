@@ -1,6 +1,6 @@
-# Struts 2 + Spring 3 (Open BSAD3)
+# Struts 2 + Spring 3 (Open CTBE3)
 
-Projeto base para execução de aplicações **BSAD** sem dependência da plataforma BSAD3 original.
+Projeto base para execução de aplicações **CTBE** sem dependência da plataforma CTBE3 original.
 
 Compatível com **Apache Tomcat 9** e utiliza:
 - Struts 2
@@ -146,7 +146,7 @@ http://localhost:8080/struts-spring-hello
 
 ## 📌 Objetivo do Projeto
 
-Servir como alternativa leve para execução de aplicações BSAD, mantendo compatibilidade com arquitetura existente sem dependência da infraestrutura original.
+Servir como alternativa leve para execução de aplicações CTBE, mantendo compatibilidade com arquitetura existente sem dependência da infraestrutura original.
 
 ---
 
