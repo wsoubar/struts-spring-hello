@@ -10,11 +10,15 @@ Projeto feito para rodar aplicações BSAD sem precisar da BSAD3, utilizando **T
 
 Configure o Tomcat com usuário e senha:
 
+```bash
 admin / admin
+```
 
 Edite o arquivo:
 
+```bash
 TOMCAT_HOME/conf/tomcat-users.xml
+```
 
 Adicione:
 
@@ -29,13 +33,19 @@ Adicione:
 Após subir o Tomcat, execute os comandos abaixo no projeto:
 
 ### 📦 Primeiro deploy
+```bash
 mvn tomcat7:deploy
+```
 
 ### 🔄 Atualizar aplicação
+```bash
 mvn tomcat7:redeploy
+```
 
 ### ❌ Remover aplicação
+```bash
 mvn tomcat7:undeploy
+```
 
 ---
 
