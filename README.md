@@ -18,7 +18,9 @@ TOMCAT_HOME/conf/tomcat-users.xml
 
 Adicione:
 
+```xml
 <user username="admin" password="admin" roles="manager-script"/>
+```
 
 ---
 
